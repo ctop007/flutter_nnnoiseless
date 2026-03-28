@@ -1,40 +1,39 @@
-import 'package:flutter/foundation.dart';
-import 'package:flutter_nnnoiseless/src/rust/api/nnnoiseless.dart' as rust_api;
-import 'package:flutter_nnnoiseless/src/rust/frb_generated.dart';
+import 'dart:ffi' as ffi;
+import 'dart:isolate';
+import 'dart:typed_data';
+
+import 'package:flutter_nnnoiseless/src/ffi/rust_bindings.dart';
 import 'package:wav/wav_file.dart';
 
-/// A Dart interface for the nnnoiseless Rust library.
-///
-/// Provides high-level methods for denoising audio files and real-time
-/// audio chunks using a recurrent neural network.
 abstract class Noiseless {
-  /// The singleton instance of the [Noiseless] interface.
   static final Noiseless instance = _NoiselessImpl();
 
-  /// Denoises an entire audio file.
-  ///
-  /// This function reads an audio file from [inputPathStr], processes it,
-  /// and saves the cleaned audio to [outputPathStr]. It handles different
-  /// audio formats and sample rates automatically.
+  static int get targetSampleRate => RustBindings.instance.targetSampleRate;
+
+  static int get frameSize => RustBindings.instance.frameSize;
+
   Future<void> denoiseFile({
     required String inputPathStr,
     required String outputPathStr,
   });
 
-  /// Denoises a single chunk of raw audio data.
-  ///
-  /// This is suitable for real-time processing, such as from a microphone stream.
-  /// The [input] is expected to be raw 16-bit PCM audio.
-  /// The [inputSampleRate] defaults to 48000Hz, which is what the model is
-  /// optimized for.
-  Future<Uint8List> denoiseChunk({
+  NoiselessStreamSession createSession({
+    required int inputSampleRate,
+    int numChannels = 1,
+  });
+
+  int recommendedInputFrameBytes({
+    required int sampleRate,
+    int numChannels = 1,
+  });
+
+  Uint8List denoiseChunk({
     required Uint8List input,
     int inputSampleRate = 48000,
   });
 
-  /// Converts a raw 16-bit PCM audio buffer into a WAV file.
-  ///
-  /// Useful for saving the output of [denoiseChunk] to a playable format.
+  void resetDenoiseChunkState();
+
   Future<void> pcmToWav({
     required Uint8List pcmData,
     required String outputPath,
@@ -43,40 +42,129 @@ abstract class Noiseless {
   });
 }
 
-/// The concrete implementation of the [Noiseless] interface.
-class _NoiselessImpl extends Noiseless {
-  bool _initialized = false;
-
-  /// Initializes the underlying Rust library if it hasn't been already.
-  Future<void> init() async {
-    if (!RustLib.instance.initialized) {
-      await RustLib.init();
-    }
-    _initialized = true;
+class NoiselessStreamSession implements ffi.Finalizable {
+  NoiselessStreamSession._({
+    required this.inputSampleRate,
+    required this.numChannels,
+    required ffi.Pointer<ffi.Void> handle,
+  }) : _handle = handle {
+    _finalizer.attach(this, _handle.cast(), detach: this);
   }
+
+  static final _bindings = RustBindings.instance;
+  static final _finalizer = ffi.NativeFinalizer(
+    _bindings.streamDestroySymbol.cast(),
+  );
+
+  final int inputSampleRate;
+  final int numChannels;
+  ffi.Pointer<ffi.Void> _handle;
+
+  int get outputSampleRate => inputSampleRate;
+
+  int get recommendedInputFrameBytes => _bindings.recommendedInputFrameBytes(
+    sampleRate: inputSampleRate,
+    numChannels: numChannels,
+  );
+
+  bool get isClosed => _handle == ffi.nullptr;
+
+  Uint8List processChunk(Uint8List input) {
+    _ensureOpen();
+    return _bindings.processStream(_handle, input);
+  }
+
+  Uint8List flush() {
+    _ensureOpen();
+    return _bindings.flushStream(_handle);
+  }
+
+  void close() {
+    if (_handle == ffi.nullptr) {
+      return;
+    }
+
+    _finalizer.detach(this);
+    _bindings.destroyStream(_handle);
+    _handle = ffi.nullptr;
+  }
+
+  void _ensureOpen() {
+    if (_handle == ffi.nullptr) {
+      throw StateError('NoiselessStreamSession has already been closed.');
+    }
+  }
+}
+
+class _NoiselessImpl extends Noiseless {
+  _NoiselessImpl() : _bindings = RustBindings.instance;
+
+  final RustBindings _bindings;
+  NoiselessStreamSession? _compatSession;
+  int? _compatSampleRate;
 
   @override
   Future<void> denoiseFile({
     required String inputPathStr,
     required String outputPathStr,
-  }) async {
-    if (!_initialized) await init();
-    return rust_api.denoise(
-      inputPathStr: inputPathStr,
-      outputPathStr: outputPathStr,
+  }) {
+    return Isolate.run(
+      () => RustBindings.instance.denoiseFile(
+        inputPath: inputPathStr,
+        outputPath: outputPathStr,
+      ),
     );
   }
 
   @override
-  Future<Uint8List> denoiseChunk({
+  NoiselessStreamSession createSession({
+    required int inputSampleRate,
+    int numChannels = 1,
+  }) {
+    final handle = _bindings.createStream(
+      inputSampleRate: inputSampleRate,
+      numChannels: numChannels,
+    );
+    return NoiselessStreamSession._(
+      inputSampleRate: inputSampleRate,
+      numChannels: numChannels,
+      handle: handle,
+    );
+  }
+
+  @override
+  int recommendedInputFrameBytes({
+    required int sampleRate,
+    int numChannels = 1,
+  }) {
+    return _bindings.recommendedInputFrameBytes(
+      sampleRate: sampleRate,
+      numChannels: numChannels,
+    );
+  }
+
+  @override
+  Uint8List denoiseChunk({
     required Uint8List input,
     int inputSampleRate = 48000,
-  }) async {
-    if (!_initialized) await init();
-    return rust_api.denoiseChunk(
-      input: input,
-      inputSampleRate: inputSampleRate,
-    );
+  }) {
+    final session = _compatSession;
+    if (session == null ||
+        _compatSampleRate != inputSampleRate ||
+        session.isClosed) {
+      _compatSession?.close();
+      _compatSession = createSession(inputSampleRate: inputSampleRate);
+      _compatSampleRate = inputSampleRate;
+    }
+
+    return _compatSession!.processChunk(input);
+  }
+
+  @override
+  void resetDenoiseChunkState() {
+    _compatSession?.close();
+    _compatSession = null;
+    _compatSampleRate = null;
   }
 
   @override
@@ -86,36 +174,25 @@ class _NoiselessImpl extends Noiseless {
     int sampleRate = 48000,
     int numChannels = 1,
   }) async {
-    // Convert the raw byte data (Uint8List) into a list of 16-bit integers.
-    // ByteData.view provides a way to read multi-byte values from a byte buffer.
-    final pcm16 = pcmData.buffer.asInt16List();
-
-    // De-interleave the PCM data and normalize to the [-1.0, 1.0] range for the package.
-    List<List<double>> tempChannels = List.generate(
-      numChannels,
-      (_) => <double>[],
+    final pcm16 = pcmData.buffer.asInt16List(
+      pcmData.offsetInBytes,
+      pcmData.lengthInBytes ~/ 2,
     );
-    for (int i = 0; i < pcm16.length; i++) {
-      final channel = i % numChannels;
-      double sample = pcm16[i] / 32767.0;
+    final frameCount = pcm16.length ~/ numChannels;
+    final channels = List.generate(numChannels, (_) => Float64List(frameCount));
 
-      // Sanitize the audio data to prevent errors with NaN or Infinity.
-      if (sample.isNaN || sample.isInfinite) {
-        sample = 0.0;
+    for (int index = 0; index < frameCount; index++) {
+      for (int channel = 0; channel < numChannels; channel++) {
+        final raw = pcm16[index * numChannels + channel] / 32768.0;
+        final sample = raw.isFinite ? raw : 0.0;
+        channels[channel][index] = sample.clamp(-1.0, 1.0).toDouble();
       }
-
-      tempChannels[channel].add(sample);
     }
 
-    final channels =
-        tempChannels
-            .map((channelData) => Float64List.fromList(channelData))
-            .toList();
-
-    // Create a Wav object with the audio data and specifications.
     final wav = Wav(channels, sampleRate);
-
-    // Write the Wav object to a file.
-    await wav.writeFile('$outputPath.wav');
+    final resolvedPath = outputPath.toLowerCase().endsWith('.wav')
+        ? outputPath
+        : '$outputPath.wav';
+    await wav.writeFile(resolvedPath);
   }
 }

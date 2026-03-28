@@ -1,0 +1,237 @@
+[2026-03-28 14:18:41] Launching lib/main.dart on 23113RKC6C in debug mode...
+[2026-03-28 14:18:54] Running Gradle task 'assembleDebug'...                          
+[2026-03-28 14:18:54] Resolving dependencies...
+[2026-03-28 14:18:54] Downloading packages...
+[2026-03-28 14:18:54]   args 2.4.2 (2.7.0 available)
+[2026-03-28 14:18:54]   collection 1.18.0 (1.19.1 available)
+[2026-03-28 14:18:54]   convert 3.1.1 (3.1.2 available)
+[2026-03-28 14:18:54]   crypto 3.0.3 (3.0.7 available)
+[2026-03-28 14:18:54]   github 9.17.0 (9.25.0 available)
+[2026-03-28 14:18:54]   http 1.1.0 (1.6.0 available)
+[2026-03-28 14:18:54]   http_parser 4.0.2 (4.1.2 available)
+[2026-03-28 14:18:54]   logging 1.2.0 (1.3.0 available)
+[2026-03-28 14:18:54]   path 1.8.0 (1.9.1 available)
+[2026-03-28 14:18:54]   petitparser 5.4.0 (7.0.2 available)
+[2026-03-28 14:18:54]   source_span 1.10.0 (1.10.2 available)
+[2026-03-28 14:18:54]   toml 0.14.0 (0.18.0 available)
+[2026-03-28 14:18:54]   version 3.0.0 (3.0.2 available)
+[2026-03-28 14:18:54]   yaml 3.1.2 (3.1.3 available)
+[2026-03-28 14:18:54] Got dependencies!
+[2026-03-28 14:18:54] 14 packages have newer versions incompatible with dependency constraints.
+[2026-03-28 14:18:54] Try `dart pub outdated` for more information.
+[2026-03-28 14:18:54] Compiling bin/build_tool_runner.dart to kernel file bin/build_tool_runner.dill.
+[2026-03-28 14:18:55] INFO: Precompiled binaries are disabled
+[2026-03-28 14:18:55] INFO: Building rust_lib_flutter_nnnoiseless for aarch64-linux-android
+[2026-03-28 14:19:04] INFO: Building rust_lib_flutter_nnnoiseless for i686-linux-android
+[2026-03-28 14:19:08] D/FlutterJNI( 2639): Beginning load of flutter...
+[2026-03-28 14:19:08] D/FlutterJNI( 2639): flutter (null) was loaded normally!
+[2026-03-28 14:19:08] INFO: Building rust_lib_flutter_nnnoiseless for x86_64-linux-android
+[2026-03-28 14:19:09] I/flutter ( 2639): [IMPORTANT:flutter/shell/platform/android/android_context_vk_impeller.cc(62)] Using the Impeller rendering backend (Vulkan).
+[2026-03-28 14:19:09] I/flutter ( 2639): 🗂️ 插件 example 模型根目录: /data/user/0/com.example.aimost_offline_translate_plugin_example/files/offline_models
+[2026-03-28 14:19:09] I/flutter ( 2639): 🧭 插件 example 未显式指定 Sherpa 目录，回退到 modelsRoot 自动解析: /data/user/0/com.example.aimost_offline_translate_plugin_example/files/offline_models
+[2026-03-28 14:19:09] I/flutter ( 2639): 🗂️ 插件 example 线上模型配置缓存路径: /data/user/0/com.example.aimost_offline_translate_plugin_example/files/offline_model_catalog/online_android.json
+[2026-03-28 14:19:09] I/flutter ( 2639): 📋 插件 example 已导出离线配置到: /data/user/0/com.example.aimost_offline_translate_plugin_example/files/offline_model_catalog/online_android.json
+[2026-03-28 14:19:09] I/flutter ( 2639): 📦 ProviderRegistry: 注册 Provider "iflytek"
+[2026-03-28 14:19:09] I/flutter ( 2639): 📦 IflytekProvider: 已注册到 ProviderRegistry
+[2026-03-28 14:19:09] I/flutter ( 2639): 🛰️ 插件模型联调参数: configUrl=http://test.speak.szyunjizn.top/aismart-api/offline/app/config?publishType=release&modelEngineVersion=1.0.0, fileResolverUrl=http://test.speak.szyunjizn.top/aismart-api/offline/app/files, directDownloadBaseUrl=https://newtranx-mosstalk01-new.oss-cn-beijing.aliyuncs.com/offline-models, configCachePath=/data/user/0/com.example.aimost_offline_translate_plugin_example/files/offline_model_catalog/online_android.json, requestContext={has_auth_token: true, tag: MIKE123456, app: 2.1.9, package: com.hzh.aigsm, lang: 122, t: android, s: google|Pixel 4a|11, publishType: release, modelEngineVersion: 1.0.0}
+[2026-03-28 14:19:19] Running Gradle task 'assembleDebug'...                             37.2s
+[2026-03-28 14:19:20] ✓ Built build/app/outputs/flutter-apk/app-debug.apk
+[2026-03-28 14:19:26] Installing build/app/outputs/flutter-apk/app-debug.apk...           6.3s
+[2026-03-28 14:19:27] D/FlutterJNI(17598): Beginning load of flutter...
+[2026-03-28 14:19:27] D/FlutterJNI(17598): flutter (null) was loaded normally!
+[2026-03-28 14:19:27] I/flutter (17598): [IMPORTANT:flutter/shell/platform/android/android_context_vk_impeller.cc(62)] Using the Impeller rendering backend (Vulkan).
+[2026-03-28 14:19:30] Syncing files to device 23113RKC6C...                              138ms
+[2026-03-28 14:19:30] 
+[2026-03-28 14:19:30] Flutter run key commands.
+[2026-03-28 14:19:30] r Hot reload. 🔥🔥🔥
+[2026-03-28 14:19:30] R Hot restart.
+[2026-03-28 14:19:30] h List all available interactive commands.
+[2026-03-28 14:19:30] d Detach (terminate "flutter run" but leave application running).
+[2026-03-28 14:19:30] c Clear the screen
+[2026-03-28 14:19:30] q Quit (terminate the application on the device).
+[2026-03-28 14:19:30] 
+[2026-03-28 14:19:30] A Dart VM Service on 23113RKC6C is available at: http://127.0.0.1:52386/xhI8DAQ3U_M=/
+[2026-03-28 14:19:30] The Flutter DevTools debugger and profiler on 23113RKC6C is available at: http://127.0.0.1:52386/xhI8DAQ3U_M=/devtools/?uri=ws://127.0.0.1:52386/xhI8DAQ3U_M=/ws
+[2026-03-28 14:19:32] D/ProfileInstaller(17598): Installing profile for com.antonkarpenko.nnnoiseless
+[2026-03-28 14:19:32] D/libEGL  (17598): Post task 1
+[2026-03-28 14:19:32] D/libEGL  (17598): Worker thread start 475146982400
+[2026-03-28 14:19:32] D/libEGL  (17598): Run task 1
+[2026-03-28 14:19:37] I/nko.nnnoiseless(17598): ProcessProfilingInfo new_methods=0 is saved saved_to_disk=1
+[2026-03-28 14:19:58] I/nko.nnnoiseless(17598): This is non sticky GC, maxfree is 33554432 minfree is 8388608
+[2026-03-28 14:19:58] W/FinalizerDaemon(17598): type=1400 audit(0.0:86085): avc:  denied  { getopt } for  path="/dev/socket/usap_pool_primary" scontext=u:r:untrusted_app:s0:c61,c257,c512,c768 tcontext=u:r:zygote:s0 tclass=unix_stream_socket permissive=0 app=com.antonkarpenko.nnnoiseless
+[2026-03-28 14:20:02] D/libEGL  (17598): Worker thread exit 475146982400
+[2026-03-28 14:21:18] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101558854, downTime=101558854, phoneEventTime=14:21:17.971 } moveCount:0
+[2026-03-28 14:21:18] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:21:18] E/nko.nnnoiseless(17598): FrameInsert open fail: No such file or directory
+[2026-03-28 14:21:18] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101559474, downTime=101558854, phoneEventTime=14:21:18.591 } moveCount:109
+[2026-03-28 14:21:19] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101559956, downTime=101559956, phoneEventTime=14:21:19.073 } moveCount:0
+[2026-03-28 14:21:19] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:21:19] D/CompatChangeReporter(17598): Compat change id reported: 351566728; UID 10317; state: ENABLED
+[2026-03-28 14:21:19] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101560098, downTime=101559956, phoneEventTime=14:21:19.215 } moveCount:24
+[2026-03-28 14:21:19] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101560351, downTime=101560351, phoneEventTime=14:21:19.468 } moveCount:0
+[2026-03-28 14:21:19] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:21:19] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101560509, downTime=101560351, phoneEventTime=14:21:19.625 } moveCount:25
+[2026-03-28 14:21:20] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101561082, downTime=101561082, phoneEventTime=14:21:20.199 } moveCount:0
+[2026-03-28 14:21:20] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:21:20] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101561676, downTime=101561082, phoneEventTime=14:21:20.792 } moveCount:120
+[2026-03-28 14:21:23] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101564278, downTime=101564278, phoneEventTime=14:21:23.395 } moveCount:0
+[2026-03-28 14:21:23] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:21:23] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101564383, downTime=101564278, phoneEventTime=14:21:23.499 } moveCount:0
+[2026-03-28 14:21:23] I/ContentCatcher(17598): SettingTrigger : unregister status observer com.antonkarpenko.nnnoiseless.MainActivity
+[2026-03-28 14:21:23] I/ContentCatcher(17598): SettingTrigger : unregisterUIAgentListener com.antonkarpenko.nnnoiseless.MainActivity, uid:10317
+[2026-03-28 14:21:24] D/Activity(17598): Activity = ActivityInfo{a52681c com.antonkarpenko.nnnoiseless.MainActivity}, Resume onConfigurationChanged = {1.0 460mcc11mnc [zh_CN] ldltr sw411dp w411dp h914dp 420dpi nrml long hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 0 - 1080, 2400) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0 mInSplitScreen=false letterBoxed=false foScaled=false isSpecificEmbedded=false embeddingScale=1.0} s.2 fontWeightAdjustment=0/d/0 themeChanged=0 themeChangedFlags=0 display=0 extraData = Bundle[{}] screenType=0/0}
+[2026-03-28 14:21:24] I/ContentCatcher(17598): SettingTrigger : register screen QA status observer com.antonkarpenko.nnnoiseless.MainActivity
+[2026-03-28 14:21:24] I/ContentCatcher(17598): SettingTrigger : register global collect status observer com.antonkarpenko.nnnoiseless.MainActivity
+[2026-03-28 14:21:24] I/ContentCatcher(17598): SettingTrigger : registerUIAgentListener com.antonkarpenko.nnnoiseless.MainActivity, uid:10317
+[2026-03-28 14:21:24] D/AudioSystem(17598): onNewService: media.audio_policy service obtained 0xb400007177325d90
+[2026-03-28 14:21:24] D/AudioSystem(17598): getService: checking for service media.audio_policy: 0xb400007177325d90
+[2026-03-28 14:21:24] D/AudioManager(17598): getMode: mode=0, callApp=com.antonkarpenko.nnnoiseless
+[2026-03-28 14:21:24] I/AudioManager(17598): In isSpeakerphoneOn() calling application: com.antonkarpenko.nnnoiseless
+[2026-03-28 14:21:24] D/AudioSystem(17598): onNewServiceWithAdapter: media.audio_flinger service obtained 0xb40000709728d720
+[2026-03-28 14:21:24] D/AudioSystem(17598): getService: checking for service media.audio_flinger: 0xb4000071772972c0
+[2026-03-28 14:21:24] D/AudioSystem(17598): getClient: checking for service: 0xb40000709728d720
+[2026-03-28 14:21:24] D/AudioRecordStub(17598): AudioRecordStub() create
+[2026-03-28 14:21:24] I/AudioRecordImpl(17598): initAudioRecordImpl()
+[2026-03-28 14:21:24] D/AudioRecord(17598): set(): 0xb400006fa72b0070, inputSource 0, sampleRate 48000, format 0x1, channelMask 0x10, frameCount 3840, notificationFrames 0, sessionId 0, transferType 0, flags 0, attributionSource AttributionSourceState{pid: 17598, uid: 10317, deviceId: 0, packageName: com.antonkarpenko.nnnoiseless, attributionTag: (null), token: binder:0xb400007157293170, renouncedPermissions: [], next: []}uid -1, pid -1
+[2026-03-28 14:21:24] V/xlog_client(17598): xlog_check_permission event name audio_track_message level 0
+[2026-03-28 14:21:24] V/xlog_client(17598): xlog_check_permission event name audio_repeat_start_stop level 0
+[2026-03-28 14:21:24] V/xlog_client(17598): xlog_check_permission event name audio_zero_data level 0
+[2026-03-28 14:21:24] I/AudioEffect(17598): queryNumberEffects(): *numEffects = 29, ret = 0
+[2026-03-28 14:21:24] I/AudioEffect(17598): queryNumberEffects(): *numEffects = 29, ret = 0
+[2026-03-28 14:21:24] I/AudioEffect(17598): set 0xb40000700730cbc0 uuid: 0x6edafdc1e0 timeLow 7b491460
+[2026-03-28 14:21:24] I/AudioEffect(17598): set() 0xb40000700730cbc0 OK effect: Acoustic Echo Canceler id: 923 status 0 enabled 0 pid 17598
+[2026-03-28 14:21:24] I/AudioEffect(17598): queryNumberEffects(): *numEffects = 29, ret = 0
+[2026-03-28 14:21:24] I/AudioEffect(17598): set 0xb400007007302790 uuid: 0x6edafdcd50 timeLow 58b4b260
+[2026-03-28 14:21:24] I/AudioEffect(17598): set() 0xb400007007302790 OK effect: Noise Suppression id: 931 status 0 enabled 0 pid 17598
+[2026-03-28 14:21:24] W/EpFrameworkFactory(17598): activated: false jar exist: false
+[2026-03-28 14:21:24] I/AudioRecord(17598): start mSessionID=1121 start(232): sync event 0 trigger session 0  packageName: com.antonkarpenko.nnnoiseless
+[2026-03-28 14:21:24] W/EpFrameworkFactory(17598): activated: false jar exist: false
+[2026-03-28 14:21:24] I/HandWritingStubImpl(17598): refreshLastKeyboardType: 1
+[2026-03-28 14:21:24] I/HandWritingStubImpl(17598): getCurrentKeyboardType: 1
+[2026-03-28 14:21:25] D/InsetsController(17598): hide(ime(), fromIme=false)
+[2026-03-28 14:21:25] I/ImeTracker(17598): com.antonkarpenko.nnnoiseless:5b025119: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+[2026-03-28 14:21:28] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101569043, downTime=101569043, phoneEventTime=14:21:28.160 } moveCount:0
+[2026-03-28 14:21:28] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:21:28] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101569273, downTime=101569043, phoneEventTime=14:21:28.390 } moveCount:21
+[2026-03-28 14:21:28] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101569525, downTime=101569525, phoneEventTime=14:21:28.642 } moveCount:0
+[2026-03-28 14:21:28] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:21:28] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101569739, downTime=101569525, phoneEventTime=14:21:28.855 } moveCount:20
+[2026-03-28 14:21:29] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101570348, downTime=101570348, phoneEventTime=14:21:29.465 } moveCount:0
+[2026-03-28 14:21:29] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:21:29] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101570533, downTime=101570348, phoneEventTime=14:21:29.650 } moveCount:19
+[2026-03-28 14:21:30] D/AudioRecordImpl(17598): [audioRecordData][fine] 5s(f:5043 m:76 s:0) : pid 17598 uid 10317 sessionId 1121 sr 48000 ch 1 fmt 1
+[2026-03-28 14:21:32] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101573444, downTime=101573444, phoneEventTime=14:21:32.560 } moveCount:0
+[2026-03-28 14:21:32] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:21:32] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101573557, downTime=101573444, phoneEventTime=14:21:32.673 } moveCount:0
+[2026-03-28 14:21:32] I/AudioRecord(17598): stop mSessionID=1121, mPortID=232, mActice: 1 packageName: com.antonkarpenko.nnnoiseless
+[2026-03-28 14:21:32] D/AudioRecord(17598): stop(232): mActive:1
+[2026-03-28 14:21:32] I/AudioRecord(17598): stop mSessionID=1121, mPortID=232, mActice: 0 packageName: com.antonkarpenko.nnnoiseless
+[2026-03-28 14:21:32] D/AudioRecord(17598): stop(232): mActive:0
+[2026-03-28 14:21:32] I/AudioRecord(17598): stop mSessionID=1121, mPortID=232, mActice: 0 packageName: com.antonkarpenko.nnnoiseless
+[2026-03-28 14:21:32] D/AudioRecord(17598): stop(232): mActive:0
+[2026-03-28 14:21:32] D/AudioRecordStub(17598): ~AudioRecordStub() destroy
+[2026-03-28 14:21:32] I/AudioEffect(17598): Destructor 0xb40000700730cbc0
+[2026-03-28 14:21:32] I/AudioEffect(17598): Destructor 0xb400007007302790
+[2026-03-28 14:21:33] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101574712, downTime=101574712, phoneEventTime=14:21:33.829 } moveCount:0
+[2026-03-28 14:21:33] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:21:34] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101574912, downTime=101574712, phoneEventTime=14:21:34.029 } moveCount:32
+[2026-03-28 14:21:36] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101577747, downTime=101577747, phoneEventTime=14:21:36.864 } moveCount:0
+[2026-03-28 14:21:36] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:21:37] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101577834, downTime=101577747, phoneEventTime=14:21:36.950 } moveCount:0
+[2026-03-28 14:21:38] I/MIUIInput(17598): [KeyEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_VOLUME_DOWN, scanCode=114, metaState=0, flags=0x8, repeatCount=0, eventTime=101579380106000, downTime=101579380106000, deviceId=4, source=0x101, displayId=-1 }, phoneEventTime=14:21:38.497
+[2026-03-28 14:21:38] I/MIUIInput(17598): [KeyEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', KeyEvent { action=ACTION_UP, keyCode=KEYCODE_VOLUME_DOWN, scanCode=114, metaState=0, flags=0x8, repeatCount=0, eventTime=101579487897000, downTime=101579380106000, deviceId=4, source=0x101, displayId=-1 }, phoneEventTime=14:21:38.604
+[2026-03-28 14:21:39] I/MIUIInput(17598): [KeyEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_VOLUME_UP, scanCode=115, metaState=0, flags=0x8, repeatCount=0, eventTime=101580376253000, downTime=101580376253000, deviceId=2, source=0x101, displayId=-1 }, phoneEventTime=14:21:39.492
+[2026-03-28 14:21:39] I/MIUIInput(17598): [KeyEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', KeyEvent { action=ACTION_UP, keyCode=KEYCODE_VOLUME_UP, scanCode=115, metaState=0, flags=0x8, repeatCount=0, eventTime=101580529772000, downTime=101580376253000, deviceId=2, source=0x101, displayId=-1 }, phoneEventTime=14:21:39.645
+[2026-03-28 14:21:39] I/MIUIInput(17598): [KeyEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_VOLUME_UP, scanCode=115, metaState=0, flags=0x8, repeatCount=0, eventTime=101580653870000, downTime=101580653870000, deviceId=2, source=0x101, displayId=-1 }, phoneEventTime=14:21:39.770
+[2026-03-28 14:21:39] I/MIUIInput(17598): [KeyEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', KeyEvent { action=ACTION_UP, keyCode=KEYCODE_VOLUME_UP, scanCode=115, metaState=0, flags=0x8, repeatCount=0, eventTime=101580795038000, downTime=101580653870000, deviceId=2, source=0x101, displayId=-1 }, phoneEventTime=14:21:39.912
+[2026-03-28 14:21:40] I/MIUIInput(17598): [KeyEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_VOLUME_UP, scanCode=115, metaState=0, flags=0x8, repeatCount=0, eventTime=101581525913000, downTime=101581525913000, deviceId=2, source=0x101, displayId=-1 }, phoneEventTime=14:21:40.642
+[2026-03-28 14:21:40] I/MIUIInput(17598): [KeyEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', KeyEvent { action=ACTION_UP, keyCode=KEYCODE_VOLUME_UP, scanCode=115, metaState=0, flags=0x8, repeatCount=0, eventTime=101581673356000, downTime=101581525913000, deviceId=2, source=0x101, displayId=-1 }, phoneEventTime=14:21:40.789
+[2026-03-28 14:21:42] I/MIUIInput(17598): [KeyEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_VOLUME_UP, scanCode=115, metaState=0, flags=0x8, repeatCount=0, eventTime=101583511384000, downTime=101583511384000, deviceId=2, source=0x101, displayId=-1 }, phoneEventTime=14:21:42.628
+[2026-03-28 14:21:42] I/MIUIInput(17598): [KeyEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', KeyEvent { action=ACTION_UP, keyCode=KEYCODE_VOLUME_UP, scanCode=115, metaState=0, flags=0x8, repeatCount=0, eventTime=101583661628000, downTime=101583511384000, deviceId=2, source=0x101, displayId=-1 }, phoneEventTime=14:21:42.778
+[2026-03-28 14:21:45] V/MediaPlayer(17598): resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+[2026-03-28 14:21:45] V/MediaPlayer(17598): cleanDrmObj: mDrmObj=null mDrmSessionId=null
+[2026-03-28 14:21:45] D/MediaPlayer(17598): _release native called
+[2026-03-28 14:21:45] D/MediaPlayer(17598): _release native finished
+[2026-03-28 14:21:45] W/MediaPlayer(17598): mediaplayer went away with unhandled events
+[2026-03-28 14:21:45] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101586209, downTime=101586209, phoneEventTime=14:21:45.325 } moveCount:0
+[2026-03-28 14:21:45] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:21:45] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101586298, downTime=101586209, phoneEventTime=14:21:45.415 } moveCount:0
+[2026-03-28 14:21:51] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101592674, downTime=101592674, phoneEventTime=14:21:51.790 } moveCount:0
+[2026-03-28 14:21:51] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:21:52] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101592808, downTime=101592674, phoneEventTime=14:21:51.925 } moveCount:18
+[2026-03-28 14:21:53] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101593929, downTime=101593929, phoneEventTime=14:21:53.046 } moveCount:0
+[2026-03-28 14:21:53] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:21:53] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101594054, downTime=101593929, phoneEventTime=14:21:53.171 } moveCount:23
+[2026-03-28 14:21:53] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101594294, downTime=101594294, phoneEventTime=14:21:53.411 } moveCount:0
+[2026-03-28 14:21:53] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:21:53] V/MediaPlayer(17598): resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+[2026-03-28 14:21:53] V/MediaPlayer(17598): cleanDrmObj: mDrmObj=null mDrmSessionId=null
+[2026-03-28 14:21:53] D/MediaPlayer(17598): _release native called
+[2026-03-28 14:21:53] D/MediaPlayer(17598): _release native finished
+[2026-03-28 14:21:53] W/MediaPlayer(17598): mediaplayer went away with unhandled events
+[2026-03-28 14:21:53] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101594772, downTime=101594294, phoneEventTime=14:21:53.888 } moveCount:70
+[2026-03-28 14:21:54] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101595160, downTime=101595160, phoneEventTime=14:21:54.277 } moveCount:0
+[2026-03-28 14:21:54] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:21:54] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101595347, downTime=101595160, phoneEventTime=14:21:54.463 } moveCount:30
+[2026-03-28 14:21:54] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101595679, downTime=101595679, phoneEventTime=14:21:54.796 } moveCount:0
+[2026-03-28 14:21:54] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:21:55] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101595876, downTime=101595679, phoneEventTime=14:21:54.993 } moveCount:37
+[2026-03-28 14:21:56] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101596912, downTime=101596912, phoneEventTime=14:21:56.029 } moveCount:0
+[2026-03-28 14:21:56] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:21:59] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101599870, downTime=101596912, phoneEventTime=14:21:58.987 } moveCount:202
+[2026-03-28 14:21:59] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101600374, downTime=101600374, phoneEventTime=14:21:59.491 } moveCount:0
+[2026-03-28 14:21:59] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:21:59] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101600700, downTime=101600374, phoneEventTime=14:21:59.816 } moveCount:46
+[2026-03-28 14:22:00] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101601037, downTime=101601037, phoneEventTime=14:22:00.154 } moveCount:0
+[2026-03-28 14:22:00] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:22:00] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101601238, downTime=101601037, phoneEventTime=14:22:00.355 } moveCount:36
+[2026-03-28 14:22:01] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101601969, downTime=101601969, phoneEventTime=14:22:01.086 } moveCount:0
+[2026-03-28 14:22:01] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:22:01] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101602060, downTime=101601969, phoneEventTime=14:22:01.176 } moveCount:0
+[2026-03-28 14:22:02] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101603051, downTime=101603051, phoneEventTime=14:22:02.168 } moveCount:0
+[2026-03-28 14:22:02] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:22:02] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101603257, downTime=101603051, phoneEventTime=14:22:02.374 } moveCount:43
+[2026-03-28 14:22:05] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101606173, downTime=101606173, phoneEventTime=14:22:05.290 } moveCount:0
+[2026-03-28 14:22:05] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:22:05] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101606631, downTime=101606173, phoneEventTime=14:22:05.747 } moveCount:89
+[2026-03-28 14:22:08] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101609723, downTime=101609723, phoneEventTime=14:22:08.839 } moveCount:0
+[2026-03-28 14:22:08] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:22:09] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101609841, downTime=101609723, phoneEventTime=14:22:08.958 } moveCount:0
+[2026-03-28 14:22:11] I/MIUIInput(17598): [KeyEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_VOLUME_UP, scanCode=115, metaState=0, flags=0x8, repeatCount=0, eventTime=101611778078000, downTime=101611778078000, deviceId=2, source=0x101, displayId=-1 }, phoneEventTime=14:22:10.895
+[2026-03-28 14:22:11] I/MIUIInput(17598): [KeyEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', KeyEvent { action=ACTION_UP, keyCode=KEYCODE_VOLUME_UP, scanCode=115, metaState=0, flags=0x8, repeatCount=0, eventTime=101611944380000, downTime=101611778078000, deviceId=2, source=0x101, displayId=-1 }, phoneEventTime=14:22:11.061
+[2026-03-28 14:22:11] I/MIUIInput(17598): [KeyEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_VOLUME_UP, scanCode=115, metaState=0, flags=0x8, repeatCount=0, eventTime=101612330091000, downTime=101612330091000, deviceId=2, source=0x101, displayId=-1 }, phoneEventTime=14:22:11.447
+[2026-03-28 14:22:11] I/MIUIInput(17598): [KeyEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', KeyEvent { action=ACTION_UP, keyCode=KEYCODE_VOLUME_UP, scanCode=115, metaState=0, flags=0x8, repeatCount=0, eventTime=101612480139000, downTime=101612330091000, deviceId=2, source=0x101, displayId=-1 }, phoneEventTime=14:22:11.597
+[2026-03-28 14:22:14] I/MIUIInput(17598): [KeyEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_VOLUME_DOWN, scanCode=114, metaState=0, flags=0x8, repeatCount=0, eventTime=101614879656000, downTime=101614879656000, deviceId=4, source=0x101, displayId=-1 }, phoneEventTime=14:22:13.996
+[2026-03-28 14:22:14] I/MIUIInput(17598): [KeyEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', KeyEvent { action=ACTION_UP, keyCode=KEYCODE_VOLUME_DOWN, scanCode=114, metaState=0, flags=0x8, repeatCount=0, eventTime=101615006870000, downTime=101614879656000, deviceId=4, source=0x101, displayId=-1 }, phoneEventTime=14:22:14.123
+[2026-03-28 14:22:14] V/MediaPlayer(17598): resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+[2026-03-28 14:22:14] V/MediaPlayer(17598): cleanDrmObj: mDrmObj=null mDrmSessionId=null
+[2026-03-28 14:22:14] D/MediaPlayer(17598): _release native called
+[2026-03-28 14:22:14] D/MediaPlayer(17598): _release native finished
+[2026-03-28 14:22:14] W/MediaPlayer(17598): mediaplayer went away with unhandled events
+[2026-03-28 14:22:16] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101617575, downTime=101617575, phoneEventTime=14:22:16.692 } moveCount:0
+[2026-03-28 14:22:16] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:22:16] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101617704, downTime=101617575, phoneEventTime=14:22:16.821 } moveCount:25
+[2026-03-28 14:22:17] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101617945, downTime=101617945, phoneEventTime=14:22:17.062 } moveCount:0
+[2026-03-28 14:22:17] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:22:18] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101619087, downTime=101617945, phoneEventTime=14:22:18.204 } moveCount:224
+[2026-03-28 14:22:20] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101621681, downTime=101621681, phoneEventTime=14:22:20.798 } moveCount:0
+[2026-03-28 14:22:20] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:22:21] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101622593, downTime=101621681, phoneEventTime=14:22:21.709 } moveCount:133
+[2026-03-28 14:22:22] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101623062, downTime=101623062, phoneEventTime=14:22:22.179 } moveCount:0
+[2026-03-28 14:22:22] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:22:22] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101623183, downTime=101623062, phoneEventTime=14:22:22.300 } moveCount:14
+[2026-03-28 14:22:23] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101623945, downTime=101623945, phoneEventTime=14:22:23.062 } moveCount:0
+[2026-03-28 14:22:23] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:22:23] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101624061, downTime=101623945, phoneEventTime=14:22:23.177 } moveCount:0
+[2026-03-28 14:22:23] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101624786, downTime=101624786, phoneEventTime=14:22:23.902 } moveCount:0
+[2026-03-28 14:22:23] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:22:24] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101624874, downTime=101624786, phoneEventTime=14:22:23.990 } moveCount:0
+[2026-03-28 14:22:29] V/MediaPlayer(17598): resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+[2026-03-28 14:22:29] V/MediaPlayer(17598): cleanDrmObj: mDrmObj=null mDrmSessionId=null
+[2026-03-28 14:22:29] D/MediaPlayer(17598): _release native called
+[2026-03-28 14:22:29] D/MediaPlayer(17598): _release native finished
+[2026-03-28 14:22:29] W/MediaPlayer(17598): mediaplayer went away with unhandled events
+[2026-03-28 14:22:30] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=101631659, downTime=101631659, phoneEventTime=14:22:30.776 } moveCount:0
+[2026-03-28 14:22:30] D/VRI[MainActivity](17598): getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+[2026-03-28 14:22:30] I/MIUIInput(17598): [MotionEvent] ViewRootImpl windowName 'com.antonkarpenko.nnnoiseless/com.antonkarpenko.nnnoiseless.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=101631750, downTime=101631659, phoneEventTime=14:22:30.867 } moveCount:17
+[2026-03-28 14:22:3

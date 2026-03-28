@@ -22,6 +22,15 @@ rootProject.allprojects {
 
 apply plugin: 'com.android.library'
 
+def rustLibName = "hzh_noise"
+def prebuiltAndroidAbis = ["armeabi-v7a", "arm64-v8a", "x86", "x86_64"]
+def hasCompletePrebuiltAndroidBinaries = prebuiltAndroidAbis.every { abi ->
+    file("src/main/jniLibs/${abi}/lib${rustLibName}.so").exists()
+}
+def usePrebuiltAndroidBinaries =
+        hasCompletePrebuiltAndroidBinaries &&
+        !project.hasProperty("flutterNnnoiselessForceSourceBuild")
+
 android {
     if (project.android.hasProperty("namespace")) {
         namespace 'com.flutter_rust_bridge.flutter_nnnoiseless'
@@ -38,10 +47,20 @@ android {
     defaultConfig {
         minSdkVersion 23
     }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
 }
 
-apply from: "../cargokit/gradle/plugin.gradle"
-cargokit {
-    manifestDir = "../rust"
-    libname = "rust_lib_flutter_nnnoiseless"
+if (usePrebuiltAndroidBinaries) {
+    logger.lifecycle("flutter_nnnoiseless: using prebuilt Android JNI libraries")
+} else {
+    apply from: "../cargokit/gradle/plugin.gradle"
+    cargokit {
+        manifestDir = "../rust"
+        libname = rustLibName
+    }
 }

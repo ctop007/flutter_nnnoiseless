@@ -5,10 +5,10 @@ set(PROJECT_NAME "flutter_nnnoiseless")
 project(${PROJECT_NAME} LANGUAGES CXX)
 
 # Define the actual name of the Rust library crate that will be built.
-set(RUST_LIB_NAME "rust_lib_flutter_nnnoiseless")
+set(RUST_LIB_NAME "hzh_noise")
 
 # Define the final name of the DLL that the Flutter app will load.
-set(FINAL_DLL_NAME "flutter_nnnoiseless.dll")
+set(FINAL_DLL_NAME "hzh_noise.dll")
 
 # Define the final output directory for the DLL, which is next to the app's executable.
 # The $<CONFIG> part is a generator expression that correctly resolves to "Debug", "Release", etc.
